@@ -6,9 +6,8 @@
 [
     {
         "id": 2017102701,
-        "slug": "wen-zhang-biao-ti",
         "title": "文章标题",
-        "url": "http://coolblog.top/blog/wen-zhang-biao-ti",
+        "url": "http://coolblog.top/articles/2017102701"
     },
     ...
 ]
@@ -16,16 +15,15 @@
 - POST 新建一篇文章
 ```
 {
-    "title": "文章标题",
+    "title": "文章标题"
 }
 ```
 返回值
 ```
 {
     "id": 2017102701,
-    "slug": "wen-zhang-biao-ti",
     "title": "文章标题",
-    "url": "http://coolblog.top/blog/wen-zhang-biao-ti",
+    "url": "http://coolblog.top/articles/2017102701"
 }
 ```
 
