@@ -1,9 +1,6 @@
 package main
 
-import (
-	"backend/controller"
-)
-
 func main() {
-	controller.GetPages()
+	r := initRouter()
+	r.Run(":8000")
 }

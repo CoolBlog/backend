@@ -1,6 +1,6 @@
 # CoolBlog API 文档
 
-## /blog/
+## /articles
 - GET 获取文章列表
 ```
 [
@@ -29,7 +29,7 @@
 }
 ```
 
-## /blog/ID
+## /articles/ID
 - GET 获取单篇文章内容
 ```
 {
