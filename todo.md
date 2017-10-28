@@ -1,4 +1,6 @@
-- database
+- session
+- 登录验证
+- log
 - model(暂时struct, 之后换成orm)
 - 配置从setting.json 读取
 - Post /Articles 保存markdown格式
@@ -15,3 +17,4 @@
 - 缓存
 - 测试
 - 保存markdown文章，同步到github
+- database (mysql)
