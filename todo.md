@@ -1,4 +1,3 @@
-- 重命名apis -> api, models -> model
 - html render template (python + jinja?)
 - database
 - model(暂时struct, 之后换成orm)
