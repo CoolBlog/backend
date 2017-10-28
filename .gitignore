@@ -40,3 +40,4 @@ Thumbs.db
 test.db
 *.swp
 supervisord.pid
+backend
