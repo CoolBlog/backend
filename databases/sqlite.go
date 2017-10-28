@@ -1,17 +1,18 @@
 package databases
 
 import (
-	"database/sql"
-	"log"
-	_ "github.com/mattn/go-sqlite3"
 	"os"
+	"log"
+	"database/sql"
+	_ "github.com/mattn/go-sqlite3"
+	. "backend/consts"
 )
 
 var DB *sql.DB
 
 func init() {
-	os.Remove("./test.db")
-	DB, err := sql.Open("sqlite3", "./test.db")
+	os.Remove(DB_NAME)
+	DB, err := sql.Open(DB_TYPE, DB_NAME)
 	if err != nil {
 		log.Fatal(err)
 	}

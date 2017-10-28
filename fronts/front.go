@@ -1,9 +1,12 @@
 package fronts
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	. "backend/consts"
+)
 
 func Index(c *gin.Context) {
-	c.HTML(200, "index.tmpl", gin.H{})
+	c.HTML(200, "index.tmpl", gin.H{"static": STATIC_URL})
 
 }
 
