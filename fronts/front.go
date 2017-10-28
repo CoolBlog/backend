@@ -1,4 +1,4 @@
-package front
+package fronts
 
 import "github.com/gin-gonic/gin"
 

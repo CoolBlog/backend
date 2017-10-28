@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	. "backend/api"
-	. "backend/front"
+	. "backend/apis"
+	. "backend/fronts"
 )
 
 func initRouter() *gin.Engine {
