@@ -3,7 +3,8 @@ package fronts
 import "github.com/gin-gonic/gin"
 
 func Index(c *gin.Context) {
-	c.JSON(200, gin.H{"msg": "this is index"})
+	c.HTML(200, "index.tmpl", gin.H{})
+
 }
 
 func UserHomePage(c *gin.Context) {

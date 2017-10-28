@@ -8,6 +8,7 @@ import (
 
 func initRouter() *gin.Engine {
 	router := gin.Default()
+	router.LoadHTMLGlob("templates/*")
 
 	router.GET("/", Index)
 	router.GET("/u/:id", UserHomePage)

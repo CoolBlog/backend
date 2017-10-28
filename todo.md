@@ -1,4 +1,3 @@
-- html render template (python + jinja?)
 - database
 - model(暂时struct, 之后换成orm)
 - 配置从setting.json 读取
