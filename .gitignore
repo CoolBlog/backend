@@ -39,3 +39,4 @@ Thumbs.db
 .idea
 test.db
 *.swp
+supervisord.pid
