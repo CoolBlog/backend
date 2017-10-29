@@ -1,5 +1,18 @@
 package commons
 
+import (
+	"github.com/gin-gonic/gin"
+	"log"
+)
+
+func AuthMiddleWare() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		log.Println("in auth middleware")
+		c.Next()
+		log.Println("out auth middleware")
+	}
+}
+
 // AuthMiddleWare
 /*
 session_id = cookie.get('session_id')
