@@ -1,4 +1,4 @@
-package global
+package commons
 
 const HOST = "0.0.0.0"
 const PORT = ":8888"

@@ -2,7 +2,7 @@ package main
 
 import (
 	. "backend/databases"
-	. "backend/global"
+	. "backend/commons"
 )
 
 func main() {
