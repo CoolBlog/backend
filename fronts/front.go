@@ -2,7 +2,7 @@ package fronts
 
 import (
 	"github.com/gin-gonic/gin"
-	. "backend/consts"
+	. "backend/global"
 )
 
 func Index(c *gin.Context) {

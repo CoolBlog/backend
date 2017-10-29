@@ -2,7 +2,7 @@ package main
 
 import (
 	. "backend/databases"
-	. "backend/consts"
+	. "backend/global"
 )
 
 func main() {

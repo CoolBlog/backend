@@ -5,7 +5,7 @@ import (
 	"log"
 	"database/sql"
 	_ "github.com/mattn/go-sqlite3"
-	. "backend/consts"
+	. "backend/global"
 )
 
 var DB *sql.DB
