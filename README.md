@@ -1,6 +1,7 @@
 1. go get github.com/gin-gonic/gin
-2. go get github.com/mattn/go-sqlite3
+// 2. go get github.com/mattn/go-sqlite3
 3. go get github.com/gin-contrib/sessions
+4. go get -u github.com/jinzhu/gorm
     ``` unrecognized import path "golang.org/x/net/context" ```
     ``` 
     $mkdir -p $GOPATH/src/golang.org/x/
