@@ -41,3 +41,4 @@ test.db
 *.swp
 supervisord.pid
 backend
+tmp/*
