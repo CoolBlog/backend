@@ -1,284 +1,283 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-  <title>COOLBLOG</title>
+    <title>COOLBLOG</title>
 
 
-  <link rel="stylesheet" href="{{ .static }}homepage.css">
-  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ .static }}homepage.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
 <nav id="b-nav">
-  <div id="logo" class="font-size-one">
-    CoolBlog
-  </div>
-
-  <div class="container">
-    <div class="search">
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <input type="text">
+    <div id="logo" class="font-size-one">
+        CoolBlog
     </div>
-  </div>
 
-  <!--登录之前-->
-  <div class="no-user" style="display: none;">
-    <button class="signup">注册</button>
-    <button class="login">登录</button>
-  </div>
-
-  <!--登录之后-->
-  <div class="user">
-    <div class="dropdown">
-      <img src="{{ .static }}img/avatar.jpg" alt="">
-      <ul>
-        <li>
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <a href="">我的主页</a>
-        </li>
-        <li>
-          <i class="fa fa-folder" aria-hidden="true"></i>
-          <a href="">收藏文章</a>
-        </li>
-        <li>
-          <i class="fa fa-cog" aria-hidden="true"></i>
-          <a href="">设置</a>
-        </li>
-        <li>
-          <i class="fa fa-sign-out" aria-hidden="true"></i>
-          <a href="">退出</a>
-        </li>
-      </ul>
+    <div class="container">
+        <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text">
+        </div>
     </div>
-    <button class="write">
-      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-      写文章
-    </button>
-  </div>
+
+    <!--登录之前-->
+    <div class="no-user">
+        <button class="signup">注册</button>
+        <button class="login">登录</button>
+    </div>
+
+    <!--登录之后-->
+    <div class="user" style="display: none;">
+        <div class="dropdown">
+            <img src="{{ .static }}img/avatar.jpg" alt="">
+            <ul>
+                <li>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="">我的主页</a>
+                </li>
+                <li>
+                    <i class="fa fa-folder" aria-hidden="true"></i>
+                    <a href="">收藏文章</a>
+                </li>
+                <li>
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <a href="">设置</a>
+                </li>
+                <li>
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <a href="">退出</a>
+                </li>
+            </ul>
+        </div>
+        <button class="write">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            写文章
+        </button>
+    </div>
 
 </nav>
 <section id="b-section">
-  <div class="container">
-    <div class="article-content">
-      <a href="">
-        <div class="article-title">
-          我是标题我是标题
-        </div>
-        <div class="article-brief">
-          <div class="article-brief-content">
-            我是内容
-          </div>
-          <div class="article-brief-img">
-            <img src="{{ .static }}img/avatar.jpg" alt="">
-          </div>
-        </div>
-      </a>
-      <div class="article-author">
-        <a href="">
-          <img src="{{ .static }}img/avatar.jpg" alt="">
-          <span class="article-author-name">我是昵称</span>
-        </a>
-        <span class="article-author-time">2017.11.11</span>
-        <ul class="article-author-tag">
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>JS</span>
+    <div class="container">
+        <div class="article-content">
+            <a href="">
+                <div class="article-title">
+                    我是标题我是标题
+                </div>
+                <div class="article-brief">
+                    <div class="article-brief-content">
+                        我是内容
+                    </div>
+                    <div class="article-brief-img">
+                        <img src="{{ .static }}img/avatar.jpg" alt="">
+                    </div>
+                </div>
             </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>Django</span>
+            <div class="article-author">
+                <a href="">
+                    <img src="{{ .static }}img/avatar.jpg" alt="">
+                    <span class="article-author-name">我是昵称</span>
+                </a>
+                <span class="article-author-time">2017.11.11</span>
+                <ul class="article-author-tag">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>JS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>Django</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="article-content">
+            <a href="">
+                <div class="article-title">
+                    我是标题我是标题
+                </div>
+                <div class="article-brief">
+                    <div class="article-brief-content">
+                        我是内容
+                    </div>
+                    <div class="article-brief-img">
+                        <img src="{{ .static }}img/avatar.jpg" alt="">
+                    </div>
+                </div>
             </a>
-          </li>
-        </ul>
-      </div>
+            <div class="article-author">
+                <a href="">
+                    <img src="{{ .static }}img/avatar.jpg" alt="">
+                    <span class="article-author-name">我是昵称</span>
+                </a>
+                <span class="article-author-time">2017.11.11</span>
+                <ul class="article-author-tag">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>JS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>Django</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="article-content">
+            <a href="">
+                <div class="article-title">
+                    我是标题我是标题
+                </div>
+                <div class="article-brief">
+                    <div class="article-brief-content">
+                        我是内容
+                    </div>
+                    <div class="article-brief-img">
+                        <img src="{{ .static }}img/avatar.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="article-author">
+                <a href="">
+                    <img src="{{ .static }}img/avatar.jpg" alt="">
+                    <span class="article-author-name">我是昵称</span>
+                </a>
+                <span class="article-author-time">2017.11.11</span>
+                <ul class="article-author-tag">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>JS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>Django</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="article-content">
+            <a href="">
+                <div class="article-title">
+                    我是标题我是标题
+                </div>
+                <div class="article-brief">
+                    <div class="article-brief-content">
+                        我是内容
+                    </div>
+                    <div class="article-brief-img">
+                        <img src="{{ .static }}img/avatar.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="article-author">
+                <a href="">
+                    <img src="{{ .static }}img/avatar.jpg" alt="">
+                    <span class="article-author-name">我是昵称</span>
+                </a>
+                <span class="article-author-time">2017.11.11</span>
+                <ul class="article-author-tag">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>JS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>Django</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="article-content">
+            <a href="">
+                <div class="article-title">
+                    我是标题我是标题
+                </div>
+                <div class="article-brief">
+                    <div class="article-brief-content">
+                        我是内容
+                    </div>
+                    <div class="article-brief-img">
+                        <img src="{{ .static }}img/avatar.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="article-author">
+                <a href="">
+                    <img src="{{ .static }}img/avatar.jpg" alt="">
+                    <span class="article-author-name">我是昵称</span>
+                </a>
+                <span class="article-author-time">2017.11.11</span>
+                <ul class="article-author-tag">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>JS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <span>Django</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="underline">
+            <div class="line"></div>
+            <div class="under">我是有底线的</div>
+        </div>
     </div>
-    <div class="article-content">
-      <a href="">
-        <div class="article-title">
-          我是标题我是标题
-        </div>
-        <div class="article-brief">
-          <div class="article-brief-content">
-            我是内容
-          </div>
-          <div class="article-brief-img">
-            <img src="{{ .static }}img/avatar.jpg" alt="">
-          </div>
-        </div>
-      </a>
-      <div class="article-author">
-        <a href="">
-          <img src="{{ .static }}img/avatar.jpg" alt="">
-          <span class="article-author-name">我是昵称</span>
-        </a>
-        <span class="article-author-time">2017.11.11</span>
-        <ul class="article-author-tag">
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>JS</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>Django</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="article-content">
-      <a href="">
-        <div class="article-title">
-          我是标题我是标题
-        </div>
-        <div class="article-brief">
-          <div class="article-brief-content">
-            我是内容
-          </div>
-          <div class="article-brief-img">
-            <img src="{{ .static }}img/avatar.jpg" alt="">
-          </div>
-        </div>
-      </a>
-      <div class="article-author">
-        <a href="">
-          <img src="{{ .static }}img/avatar.jpg" alt="">
-          <span class="article-author-name">我是昵称</span>
-        </a>
-        <span class="article-author-time">2017.11.11</span>
-        <ul class="article-author-tag">
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>JS</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>Django</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="article-content">
-      <a href="">
-        <div class="article-title">
-          我是标题我是标题
-        </div>
-        <div class="article-brief">
-          <div class="article-brief-content">
-            我是内容
-          </div>
-          <div class="article-brief-img">
-            <img src="{{ .static }}img/avatar.jpg" alt="">
-          </div>
-        </div>
-      </a>
-      <div class="article-author">
-        <a href="">
-          <img src="{{ .static }}img/avatar.jpg" alt="">
-          <span class="article-author-name">我是昵称</span>
-        </a>
-        <span class="article-author-time">2017.11.11</span>
-        <ul class="article-author-tag">
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>JS</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>Django</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="article-content">
-      <a href="">
-        <div class="article-title">
-          我是标题我是标题
-        </div>
-        <div class="article-brief">
-          <div class="article-brief-content">
-            我是内容
-          </div>
-          <div class="article-brief-img">
-            <img src="{{ .static }}img/avatar.jpg" alt="">
-          </div>
-        </div>
-      </a>
-      <div class="article-author">
-        <a href="">
-          <img src="{{ .static }}img/avatar.jpg" alt="">
-          <span class="article-author-name">我是昵称</span>
-        </a>
-        <span class="article-author-time">2017.11.11</span>
-        <ul class="article-author-tag">
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>JS</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-tag" aria-hidden="true"></i>
-              <span>Django</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="underline">
-      <div class="line"></div>
-      <div class="under">我是有底线的</div>
-    </div>
-  </div>
 </section>
 
 
-
 <div class="model">
-  <div class="mask"></div>
-  <div class="model-content signup-content">
-    <a class="model-close-wrap">
-      <i class="fa fa-times-circle-o model-close" aria-hidden="true"></i>
-    </a>
-    <div class="model-title signup-title">
-      注册
+    <div class="mask"></div>
+    <div class="model-content signup-content">
+        <a class="model-close-wrap">
+            <i class="fa fa-times-circle-o model-close" aria-hidden="true"></i>
+        </a>
+        <div class="model-title signup-title">
+            注册
+        </div>
+        <div class="model-input">
+            <div class="model-line">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="昵称">
+            </div>
+            <div class="model-line">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="text" placeholder="密码">
+            </div>
+            <div class="model-confirm">
+                <a href="">注册</a>
+            </div>
+        </div>
     </div>
-    <div class="model-input">
-      <div class="model-line">
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <input type="text" placeholder="昵称">
-      </div>
-      <div class="model-line">
-        <i class="fa fa-lock" aria-hidden="true"></i>
-        <input type="text" placeholder="密码">
-      </div>
-      <div class="model-confirm">
-        <a href="">注册</a>
-      </div>
-    </div>
-  </div>
 </div>
 
 </div>
@@ -287,6 +286,6 @@
 <script src="{{ .static }}model.js"></script>
 <script src="{{ .static }}event.js"></script>
 <script>
-  event.init();
+    event.init();
 </script>
 </html>
