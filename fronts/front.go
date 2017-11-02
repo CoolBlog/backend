@@ -27,5 +27,5 @@ func UserHomePage(c *gin.Context) {
 }
 
 func ArticleDetail(c *gin.Context) {
-	c.JSON(200, gin.H{"msg": "this is article detail"})
+	c.HTML(200, "article_detail.tmpl", gin.H{"static": STATIC_URL})
 }
