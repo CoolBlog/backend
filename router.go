@@ -15,10 +15,11 @@ func initRouter() *gin.Engine {
 	router.GET("/", Index)
 	router.POST("/register", Register)
 	router.POST("/login", Login)
-	router.POST("/logout", Logout)
+	router.GET("/logout", Logout)
 	router.GET("/u/:id", UserHomePage)
 	router.GET("/a/:id", ArticleDetail)
 
+	// REST API
 	router.GET("/articles", GetArticlesAPI)
 	router.POST("/articles", AddArticleAPI)
 	router.GET("/articles/:id", GetArticleAPI)
