@@ -10,6 +10,18 @@ func Index(c *gin.Context) {
 
 }
 
+func Register(c *gin.Context) {
+	c.JSON(200, gin.H{"msg": "this is register"})
+}
+
+func Login(c *gin.Context) {
+	c.JSON(200, gin.H{"msg": "this is login"})
+}
+
+func Logout(c *gin.Context) {
+	c.JSON(200, gin.H{"msg": "this is logout"})
+}
+
 func UserHomePage(c *gin.Context) {
 	c.JSON(200, gin.H{"msg": "this is user homepage"})
 }

@@ -13,6 +13,9 @@ func initRouter() *gin.Engine {
 	router.Use(AuthMiddleWare())
 
 	router.GET("/", Index)
+	router.POST("/register", Register)
+	router.POST("/login", Login)
+	router.POST("/logout", Logout)
 	router.GET("/u/:id", UserHomePage)
 	router.GET("/a/:id", ArticleDetail)
 
